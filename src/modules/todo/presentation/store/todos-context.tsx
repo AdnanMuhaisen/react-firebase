@@ -53,6 +53,8 @@ const TodosContextProvider: React.FC<{ children: React.ReactNode }> = ({
     removeTodo: onDeleteHandler,
   };
 
+  console.log(process.env.NODE_ENV);
+
   return (
     <TodosContext.Provider value={contextValue}>
       {children}
